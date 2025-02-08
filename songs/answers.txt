@@ -1,0 +1,12 @@
+1. If songs.db contains the top 100 songs of one listener from 2018, their audio aura can be characterized as energetic, positive, and danceable, based on the average energy, valence, and danceability of their top songs.
+
+2. However, this calculation might not be very representative of the listener due to several reasons:
+    a. Diversity of Mood: The average of these three features might oversimplify the listener's music preferences, neglecting the diversity of moods present in their top songs.
+    b. Subjectivity of Features: Energy, valence, and danceability are subjective features and might not fully capture the nuances of a listener's preferences. Other features like tempo, instrumentalness, or genre could also play significant roles.
+    c. Weighting of Features: Giving equal weight to energy, valence, and danceability might not accurately reflect the listener's priorities. They might value one aspect more than others, which would be overlooked in this calculation.
+
+3. To improve the calculation of the audio aura, we could consider:
+    a. Weighted Features: Allowing users to assign different weights to different features based on their personal preferences.
+    b. Incorporating Genre: Analyzing the listener's top genres and deriving mood from typical characteristics of those genres.
+    c. Dynamic Analysis: Instead of averaging over the entire year, analyzing the evolution of the listener's preferences over time, possibly with sliding windows.
+    d. Personalization: Incorporating user feedback or machine learning models to tailor the calculation to individual preferences.

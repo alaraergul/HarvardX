@@ -1,0 +1,10 @@
+sort1 uses: Bubble Sort
+How do you know?: Bubble sort sorts by comparing adjacent elements and is slowest on reverse sorted lists. The sort1 program was noticeably slower on reverse-ordered files.
+
+sort2 uses: Merge Sort
+How do you know?:  Merge sort splits lists into two and sorts them recursively. It showed the fastest performance regardless of the layout of the dataset. The sort3 program gave the fastest results on all files and worked effectively even on large data sets.
+
+sort3 uses: Selection Sort
+How do you know?:  Selection sort finds the smallest element in each pass and the sorting process takes more time. The sort2 program showed moderate performance on randomly ordered files, and its performance did not vary greatly depending on the order of the data.
+
+
