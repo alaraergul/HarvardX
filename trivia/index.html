@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+    <script>
+        function checkMultipleChoiceAnswer(answer) {
+            var correctAnswer = "B"; // Change this to your correct answer
+            var result = document.getElementById("multiple-choice-result");
+
+            if (answer === correctAnswer) {
+                result.textContent = "Correct!";
+                result.style.color = "green";
+            } else {
+                result.textContent = "Incorrect";
+                result.style.color = "red";
+            }
+        }
+
+        function checkFreeResponseAnswer() {
+            var userAnswer = document.getElementById("free-response").value;
+            var correctAnswer = "JavaScript"; // Change this to your correct answer
+            var result = document.getElementById("free-response-result");
+
+            if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                result.textContent = "Correct!";
+                result.style.color = "green";
+            } else {
+                result.textContent = "Incorrect";
+                result.style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="header">
+    <h1>Trivia!</h1>
+</div>
+
+<div class="container">
+    <div class="section">
+        <h2>Part 1: Multiple Choice </h2>
+        <hr>
+        <h3>What language is this webpage written in?</h3>
+        <button onclick="checkMultipleChoiceAnswer('A')">A. HTML</button>
+        <button onclick="checkMultipleChoiceAnswer('B')">B. JavaScript</button>
+        <button onclick="checkMultipleChoiceAnswer('C')">C. CSS</button>
+        <div id="multiple-choice-result"></div>
+    </div>
+
+    <div class="section">
+        <h2>Part 2: Free Response</h2>
+        <hr>
+        <h3>What language is used for client-side scripting?</h3>
+        <input type="text" id="free-response" placeholder="Type your answer here...">
+        <button onclick="checkFreeResponseAnswer()">Submit</button>
+        <div id="free-response-result"></div>
+    </div>
+</div>
+</body>
+</html>
